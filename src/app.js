@@ -12,7 +12,7 @@ app.use(cors()); //enabling communication bw frontend and backend
 
 
 //connecting to mongodb
-app.listen(process.env.PORT || 8000, async (req, res) => {
+app.listen(8002, '0.0.0.0',  async (req, res) => {
   try {
     await mongoose.connect(
       process.env.MONGODB_URI
